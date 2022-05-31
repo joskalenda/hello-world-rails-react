@@ -1,6 +1,6 @@
 class V1::MessagesController < ApplicationController
   def index
-    message = Message.order('RANDOM()').first
-    render json: { messages: [greeting: message.content] }.to_json
+    greeting = Message.order('RANDOM()').first
+    render json: { greetings: greeting }
   end
 end
