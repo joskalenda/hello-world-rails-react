@@ -1,17 +1,15 @@
-import { legacy_createStore as createStore, combineReducers, applyMiddleware } from 'redux';
-import logger from 'redux-logger';
+import { createStore, applyMiddleware, combineReducers } from 'redux';
 import thunk from 'redux-thunk';
-import greetingsReducer from './greetings';
+import messageReducer, { fetchmessage } from './message/api';
 
 const reducer = combineReducers({
-  greetingsReducer,
+  messageReducer,
 });
-
 const store = createStore(
   reducer,
-  applyMiddleware(logger, thunk),
+  applyMiddleware(thunk),
 );
 
+store.dispatch(fetchmessage());
 export default store;
-
 
