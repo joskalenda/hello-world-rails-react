@@ -7,7 +7,7 @@ const Greeting = () => {
   useEffect(() => {
     fetchmessage()(dispatch);
   }, []);
-  const message = useSelector((state) => state.messageReducer);
+  const message = useSelector((state) => state.messageReducer.message);
 
   const handleClick = () => {
     dispatch(fetchmessage());
@@ -18,7 +18,7 @@ const Greeting = () => {
       <div>
         Message:
         {' '}
-        {/* {message.message} */}
+        {/* {message} */}
       </div>
       <button type="button" onClick={handleClick}>Next greet</button>
     </div>
