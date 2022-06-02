@@ -1,27 +1,26 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchmessage } from '../redux/message/api';
 
 const Greeting = () => {
-  const message = useSelector((state) => state.messageReducer.message);
-  console.log('message => ', message);
-
   const dispatch = useDispatch();
+  useEffect(() => {
+    fetchmessage()(dispatch);
+  }, []);
+  const message = useSelector((state) => state.messageReducer);
 
   const handleClick = () => {
     dispatch(fetchmessage());
-    console.log('hi there');
   };
-
   return (
     <div>
       <h1>Greeting</h1>
       <div>
         Message:
         {' '}
-        {message}
+        {/* {message.message} */}
       </div>
-      <button type="button" onClick={handleClick}>GREETING</button>
+      <button type="button" onClick={handleClick}>Next greet</button>
     </div>
   );
 };

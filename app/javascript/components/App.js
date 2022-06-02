@@ -9,8 +9,7 @@ const App = () => (
   <Provider store={store}>
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<h1>Welcome Topaz</h1>} />
-      <Route exact path="" element={<Greeting />} />
+      <Route exact path="/" element={<Greeting />} />
     </Routes>
   </BrowserRouter>
 </Provider>
