@@ -1,24 +1,52 @@
-# README
+# hello-world-rails-react
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> General information
 
-Things you may want to cover:
+## Built With
+- Rails
+- React
+- Ruby
+- postgresql
 
-* Ruby version
+# Get Started
+To get a local copy up and running follow these simple steps.
 
-* System dependencies
+```bash
+$ https://github.com/joskalenda/hello-world-rails-react.git
+$ cd hello-world-rails-react
+```
 
-* Configuration
+# Installation
+Clone the repo and run bundle install in the command line to install the dependencies
 
-* Database creation
+```bash
+bundle install
+```
 
-* Database initialization
+## Authors
 
-* How to run the test suite
+👤 **Jos Kalenda**
 
-* Services (job queues, cache servers, search engines, etc.)
+- GitHub: [@Jos](https://github.com/joskalenda)
+- Twitter: [@Jos](https://twitter.com/Jos-Kalenda)
+- LinkedIn: [@Jos](https://www.linkedin.com/in/jos-kalenda/)
+- 
 
-* Deployment instructions
 
-* ...
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Microverse
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
